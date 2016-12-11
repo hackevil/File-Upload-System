@@ -5,6 +5,7 @@
 
 ## Features
 - Directory Listing
+- Drag & Drop Support
 - Mutiple File Uploader
 - Progress Bar 
 - Percentage 
@@ -14,6 +15,6 @@
 
 ## Installation 
 
-## Credits 
+## Support 
 
 ## License 
