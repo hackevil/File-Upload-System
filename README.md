@@ -1,5 +1,5 @@
 # File Upload System
-> Turns Your Web Host Into a File Storage
+> Turns Your Web Host Into a Graphical File Storage
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
