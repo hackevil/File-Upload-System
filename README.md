@@ -1,8 +1,6 @@
 # File Upload System
 > Turns Your Web Host Into a Graphical File Storage
 
-A form that lets you upload mutiple files at once with a progress bar. 
-
 ![](header.png)
 
 ## Installation
