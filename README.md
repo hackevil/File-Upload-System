@@ -1,9 +1,7 @@
 # File Upload System
 > Turns Your Web Host Into a Graphical File Storage
 
-
-
-![](https://cloud.githubusercontent.com/assets/24397291/21080769/31546126-bfaf-11e6-90ad-67de12df1934.png)
+![](https://cloud.githubusercontent.com/assets/24397291/21080811/be190840-bfb0-11e6-9a83-0caefea2ed61.png)
 
 ## Installation
 
