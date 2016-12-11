@@ -1,10 +1,6 @@
 # File Upload System
 > Turns Your Web Host Into a Graphical File Storage
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 A form that lets you upload mutiple files at once with a progress bar. 
 
 ![](header.png)
