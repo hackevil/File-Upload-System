@@ -1,5 +1,5 @@
-# Product Name
-> Short blurb about what your product does.
+# File Upload System
+> Turns Your Web Host Into a File Storage
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
