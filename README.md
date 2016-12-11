@@ -1,7 +1,7 @@
 # File Upload System
 > Turns Your Web Host Into a Graphical User-friendly File Storage.
 
-![](https://cloud.githubusercontent.com/assets/24397291/21080824/f6975442-bfb0-11e6-8a4a-e5f02d66afda.png)
+![](https://cloud.githubusercontent.com/assets/24397291/21081473/a7791878-bfbf-11e6-9808-4e393ad61036.png)
 
 ## Features
 - Directory Listing
