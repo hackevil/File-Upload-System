@@ -5,7 +5,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-One to two paragraph statement about your product and what it does.
+A form that lets you upload mutiple files at once with a progress bar. 
 
 ![](header.png)
 
