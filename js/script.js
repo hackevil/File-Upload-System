@@ -1,8 +1,8 @@
-/* Javascript written by Adam Khoury */
+/* Modified version of Adam Khoury's code */ 
+
 $(function() {
    $("#progressBar").hide();
 });
-
 
 function _(el) {
 	return document.getElementById(el);
