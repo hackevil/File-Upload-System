@@ -24,20 +24,14 @@ if ($handle = opendir($directoy)) {
 
 if (isset($_POST["submit"])) {
     
-    // Count # of uploaded files in array
     $total = count($_FILES['fileToUpload']['name']);
 
-    // Loop through each file
     for($i=0; $i<$total; $i++) {
-      //Get the temp file path
       $tmpFilePath = $_FILES['fileToUpload']['tmp_name'][$i];
 
-      //Make sure we have a filepath
-      if ($tmpFilePath != ""){
-        //Setup our new file path
+      if ($tmpFilePath != "") {
         $newFilePath = "uploads/" . $_FILES['fileToUpload']['name'][$i];
 
-        //Upload the file into the temp dir
          if(move_uploaded_file($tmpFilePath, $newFilePath)) {
           	header('upload.php');
         }  else {
