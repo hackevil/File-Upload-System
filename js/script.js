@@ -1,4 +1,8 @@
 /* Javascript written by Adam Khoury */
+$(function() {
+   $("#progressBar").hide();
+});
+
 
 function _(el) {
 	return document.getElementById(el);
@@ -19,6 +23,7 @@ function uploadFile() {
 }
 
 function progressHandler(event) {
+	$("#progressBar").show();
 	_("loaded_n_total").innerHTML = "Uploaded "+event.loaded+" bytes of "+event.total;
 	var percent = (event.loaded / event.total) * 100;
 	_("progressBar").value = Math.round(percent);
@@ -27,6 +32,7 @@ function progressHandler(event) {
 
 function completeHandler(event) {
 	_("status").innerHTML = event.target.responseText;
+	$("#progressBar").hide();
 	_("progressBar").value = 0;
 }
 

@@ -10,7 +10,7 @@ if (!file_exists($directoy)) {
 }
 
 if (count(glob($directoy . "*")) === 0 ) { 
-    echo "This folder is empty!<br />"; 
+    echo "This folder is empty!"; 
 }
 
 if ($handle = opendir($directoy)) {
