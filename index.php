@@ -21,6 +21,7 @@
 	<form id="upload_form" method="post" enctype="multipart/form-data">
 	    <input type="file" name="fileToUpload[]" id="fileToUpload[]" multiple />
 	    <input type="submit" value="Upload" onclick="uploadFile()" name="submit" /><br /><br />
+	    
 	    <h3 id="status"></h3>
 	  	<p id="loaded_n_total"></p>
 	  	<progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
