@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" class="no-js">>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,7 @@
 
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	 <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
 </head>
 <body>
 
@@ -25,6 +26,11 @@
 	    <h3 id="status"></h3>
 	  	<p id="loaded_n_total"></p>
 	  	<progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+
+
+	  	<input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+		<label for="file"><strong>Choose a file</strong></label>
+
 	</form>
 
 </body>
