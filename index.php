@@ -27,10 +27,6 @@
 	  	<p id="loaded_n_total"></p>
 	  	<progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
 
-
-	  	<input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
-		<label for="file"><strong>Choose a file</strong></label>
-
 	</form>
 
 </body>
