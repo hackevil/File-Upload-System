@@ -1,10 +1,10 @@
-progress#progressBar {
+#wrapper {
+	padding: 10px;
+}
+
+/* progress#progressBar {
 	width: 100%;
 	top: 0px; 
 	display: inherit;
 	margin-bottom: 10px;
-}
-
-#wrapper {
-	padding: 10px;
-}
+} */

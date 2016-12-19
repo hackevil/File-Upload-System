@@ -1,4 +1,4 @@
-/* Modified version of Adam Khoury's code */ 
+/* Modified version of Adam Khoury's code  
 
 $(function() {
    $("#progressBar").hide();
@@ -43,3 +43,5 @@ function errorHandler(event) {
 function abortHandler(event) {
 	_("status").innerHTML = "Upload Aborted";
 }
+
+*/

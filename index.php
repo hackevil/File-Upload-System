@@ -17,7 +17,7 @@
 </head>
 <body>
 
-	<progress id="progressBar" value="0" max="100"></progress>
+	<!-- <progress id="progressBar" value="0" max="100"></progress> -->
 
 	<div id="wrapper">
 
