@@ -13,11 +13,10 @@
 
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	 <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
 </head>
 <body>
 
-	<?php include 'upload.php'; ?><br />
+	<?php include 'server/php/upload.php'; ?><br />
 
 	<form id="upload_form" method="post" enctype="multipart/form-data">
 	    <input type="file" name="fileToUpload[]" id="fileToUpload[]" multiple />
