@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" class="no-js">>
+<html lang="en-US">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +9,7 @@
 
 	<title>File Upload System</title>
 
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
@@ -16,17 +17,22 @@
 </head>
 <body>
 
-	<?php include 'server/php/upload.php'; ?><br />
+	<progress id="progressBar" value="0" max="100"></progress>
 
-	<form id="upload_form" method="post" enctype="multipart/form-data">
-	    <input type="file" name="fileToUpload[]" id="fileToUpload[]" multiple />
-	    <input type="submit" value="Upload" onclick="uploadFile()" name="submit" /><br /><br />
-	    
-	    <h3 id="status"></h3>
-	  	<p id="loaded_n_total"></p>
-	  	<progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+	<div id="wrapper">
 
-	</form>
+		<?php include 'server/php/upload.php'; ?><br />
+
+		<form id="upload_form" method="post" enctype="multipart/form-data">
+			
+		    <input type="file" name="fileToUpload[]" id="fileToUpload[]" multiple />
+		    <input type="submit" value="Upload" onclick="uploadFile()" name="submit" />
+		    
+		    <h3 id="status"></h3>
+		  	<p id="loaded_n_total"></p>
+		</form>
+
+	</div>
 
 </body>
 </html>
