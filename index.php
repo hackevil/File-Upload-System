@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" class="no-js">>
+<html lang="en-US">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,25 +9,30 @@
 
 	<title>File Upload System</title>
 
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-
-	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	 <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
 </head>
 <body>
 
-	<?php include 'upload.php'; ?><br />
+	<div id="wrapper">
 
-	<form id="upload_form" method="post" enctype="multipart/form-data">
-	    <input type="file" name="fileToUpload[]" id="fileToUpload[]" multiple />
-	    <input type="submit" value="Upload" onclick="uploadFile()" name="submit" /><br /><br />
-	    
-	    <h3 id="status"></h3>
-	  	<p id="loaded_n_total"></p>
-	  	<progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+		<div id="directory-wrapper">
 
-	</form>
+			<ul class="attributes-row">
+				<li class="name"><span>Name</span></li>
+				<li class="date"><span>Date Modified</span></li>
+				<li class="size"><span>Size</span></li>
+			</ul>
+
+			<?php include 'server/php/upload.php'; ?>
+		</div>
+
+		<form id="upload_form" method="post" enctype="multipart/form-data">
+		    <input type="file" name="fileToUpload[]" id="fileToUpload[]" multiple />
+		    <input type="submit" value="Upload" name="submit" />
+		</form>
+
+	</div>
 
 </body>
 </html>
