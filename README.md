@@ -7,6 +7,8 @@
 - Directory Listing
 - Drag & Drop Support
 - Mutiple File Uploader
+- File Modification Time
+- File Size
 - ~~Progress Bar~~ (Versions 0.1, 0.2, 0.3 - Update coming soon) 
 - ~~Percentage~~ (Versions 0.1, 0.2, 0.3 - Update coming soon) 
 - ~~Bytes Uploaded~~ (Versions 0.1, 0.2, 0.3 - Update coming soon) 
