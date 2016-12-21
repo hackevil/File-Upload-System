@@ -11,6 +11,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+<<<<<<< HEAD
 </head>
 <body>
 
@@ -32,6 +33,29 @@
 		    <input type="submit" value="Upload" name="submit" />
 		</form>
 
+=======
+
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+	<!-- <progress id="progressBar" value="0" max="100"></progress> -->
+
+	<div id="wrapper">
+
+		<?php include 'server/php/upload.php'; ?><br />
+
+		<form id="upload_form" method="post" enctype="multipart/form-data">
+			
+		    <input type="file" name="fileToUpload[]" id="fileToUpload[]" multiple />
+		    <input type="submit" value="Upload" onclick="uploadFile()" name="submit" />
+		    
+		    <h3 id="status"></h3>
+		  	<p id="loaded_n_total"></p>
+		</form>
+
+>>>>>>> origin/master
 	</div>
 
 </body>
