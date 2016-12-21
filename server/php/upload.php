@@ -34,7 +34,6 @@ if (isset($_POST["submit"])) {
 
          if(move_uploaded_file($tmpFilePath, $newFilePath)) {
           	header('upload.php');
-            exit;
         }  else {
             echo '<script>alert("Error uploading file");</script>';
         }
