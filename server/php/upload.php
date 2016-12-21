@@ -10,13 +10,13 @@ if (!file_exists($directoy)) {
 }
 
 if (count(glob($directoy . "*")) === 0 ) { 
-    echo "This folder is empty!"; 
+    echo "<span>This folder is empty!</span>"; 
 }
 
 if ($handle = opendir($directoy)) {
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
-            echo '<a href="' . $directoy . $entry . '" download>' . $entry . '</a><br />' . "\n";   
+            echo '<ul class="file-list"><li class="name"><a href="' . $directoy . $entry . '" download>' . $entry . '</a><br /></li><li class="date">' . date("F d Y H:i:s", filemtime($directoy . $entry)) . '</li><li class="size">' . filesize($directoy . $entry) .'KB </li></ul>' . "\n";   
         }
     }
     closedir($handle);
