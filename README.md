@@ -7,9 +7,9 @@
 - Directory Listing
 - Drag & Drop Support
 - Mutiple File Uploader
-- Progress Bar (Versions 0.1, 0.2, 0.3 - Update coming soon) 
-- Percentage (Versions 0.1, 0.2, 0.3 - Update coming soon) 
-- Bytes Uploaded (Versions 0.1, 0.2, 0.3 - Update coming soon) 
+- ~~Progress Bar~~ (Versions 0.1, 0.2, 0.3 - Update coming soon) 
+- ~~Percentage~~ (Versions 0.1, 0.2, 0.3 - Update coming soon) 
+- ~~Bytes Uploaded~~ (Versions 0.1, 0.2, 0.3 - Update coming soon) 
 
 ## History
 
