@@ -19,15 +19,15 @@
 		<div id="directory-wrapper">
 
 			<ul class="attributes-row">
-				<li class="name"><span>Name</span></li>
-				<li class="date"><span>Date Modified</span></li>
-				<li class="size"><span>Size</span></li>
+				<li class="name">Name</li>
+				<li class="date">Date Modified</li>
+				<li class="size">Size</li>
 			</ul>
 
 			<?php include 'server/php/upload.php'; ?>
 		</div>
 
-		<form id="upload_form" method="post" enctype="multipart/form-data">
+		<form id="upload-form" method="post" enctype="multipart/form-data">
 		    <input type="file" name="fileToUpload[]" id="fileToUpload[]" multiple />
 		    <input type="submit" value="Upload" name="submit" />
 		</form>

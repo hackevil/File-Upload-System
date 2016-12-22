@@ -16,7 +16,7 @@ if (count(glob($directoy . "*")) === 0 ) {
 if ($handle = opendir($directoy)) {
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
-            echo '<ul class="file-list"><li class="name"><a href="' . $directoy . $entry . '" download>' . $entry . '</a><br /></li><li class="date">' . date("F d Y H:i:s", filemtime($directoy . $entry)) . '</li><li class="size">' . filesize($directoy . $entry) .'KB </li></ul>' . "\n";   
+            echo '<ul class="file-row"><li class="type"><img src="assets/img/file-icon.png" width="20px"></li><li class="name"><a href="' . $directoy . $entry . '" download>' . $entry . '</a><br /></li><li class="date">' . date("d/m/y H:i:s", filemtime($directoy . $entry)) . '</li><li class="size">' . filesize($directoy . $entry) .'KB </li></ul>' . "\n";   
         }
     }
     closedir($handle);
@@ -43,3 +43,5 @@ if (isset($_POST["submit"])) {
  
 
 ?>
+
+

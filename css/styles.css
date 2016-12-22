@@ -1,46 +1,98 @@
-#wrapper {
-	padding: 10px;
-	margin: 0 auto;
-	float: left;
+/*** Uoload Buttons ***/
+
+#upload-form {
+	margin-top: 100px;
+	margin-left: 20px;
 }
 
-.attributes-row {
+/*** File Directory / Listing ***/
+
+#directory-wrapper {
+	width: 900px;
+	padding: 20px
+}
+
+ul.attributes-row {
 	list-style-type: none;
-	padding: 0;
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #000;
 }
 
 .attributes-row li {
-	float: left;
-}
- 
-.name {
-	width: 400px;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
 }
 
-.date {
+ul.file-row {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #000;
+}
+
+ul.file-row:hover {
+	background-color: lightblue;
+}
+
+ul.file-row a {
+	color: #000;
+	text-decoration: none;
+}
+
+ul.file-row a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.file-row li {
+	display: inline-block;
+	height: 40px;
+	line-height: 44px;
+    overflow:hidden;
+}
+
+ul.file-row .type {
+	width: 40px;
+}
+
+ul.file-row .type img {
+	position: relative;
+    top: 7px;
+    padding-left: 10px;
+}
+
+span {
+	position: relative;
+    top: 10px;
+    margin-left: 10px;
+}
+
+ul.file-row .name {
+	width: 400px;
+	padding-right: 40px;
+}
+
+ul.file-row .date {
 	width: 300px;
 }
 
-.size {
+ul.file-row .size {
 	width: 100px;
 }
 
-#upload_form {
-	position: absolute;
-	top: 500px;
+ul.attributes-row .name {
+	width: 400px;
+	padding-left: 8px;
 }
 
-.file-list {
-	list-style-type: none;
-	padding: 0;
-	display: inline-block;
-	margin: 0;
+ul.attributes-row .date {
+	width: 260px;
+	padding-left: 63px;
 }
 
-.file-list li {
-	float: left;
-}
-
-#directory-wrapper {
-	max-width: 800px;
+ul.attributes-row .size {
+	width: 100px;
+	padding-left: 35px;
 }
