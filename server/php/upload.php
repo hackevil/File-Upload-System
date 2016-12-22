@@ -1,4 +1,5 @@
 <?php
+//unlink('test.html')
 
 $directoy      = "uploads/";
 $target_file   = $directoy . basename($_FILES["fileToUpload"]["name"]);
@@ -13,10 +14,17 @@ if (count(glob($directoy . "*")) === 0 ) {
     echo "<span>This folder is empty!</span>"; 
 }
 
+if (isset($_GET['delete'])) {
+        unlink($_GET['delete']);
+    if (count(glob($directoy . "*")) === 0 ) { 
+      echo "<span>This folder is empty!</span>"; 
+  }
+}
+
 if ($handle = opendir($directoy)) {
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
-            echo '<ul class="file-row"><li class="type"><img src="assets/img/file-icon.png" width="20px"></li><li class="name"><a href="' . $directoy . $entry . '" download>' . $entry . '</a><br /></li><li class="date">' . date("d/m/y H:i:s", filemtime($directoy . $entry)) . '</li><li class="size">' . filesize($directoy . $entry) .'KB </li></ul>' . "\n";   
+            echo '<ul class="file-row"><li class="type"><img src="assets/img/file-icon.png" width="20px"></li><li class="name"><a href="' . $directoy . $entry . '" download>' . $entry . '</a><br /></li><li class="date">' . date("d/m/y H:i:s", filemtime($directoy . $entry)) . '</li><li class="size">' . filesize($directoy . $entry) .'KB </li><li class="btn-section"><a href="?delete=' . $directoy . $entry . '"><img src="assets/img/bin-icon.png" width="20px"></a></li></ul>' . "\n";   
         }
     }
     closedir($handle);
