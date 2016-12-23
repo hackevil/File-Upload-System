@@ -8,7 +8,7 @@
 /*** File Directory / Listing ***/
 
 #directory-wrapper {
-	width: 1000px;
+	width: 1200px;
 	padding: 20px
 }
 
@@ -26,6 +26,22 @@ ul.attributes-row {
 
 	font-size: 0.9em;
 }
+
+ul.attributes-row .name {
+	width: 465px;
+	padding-left: 8px;
+}
+
+ul.attributes-row .date {
+	width: 270px;
+	padding-left: 63px;
+}
+
+ul.attributes-row .size {
+	width: 100px;
+	padding-left: 35px;
+}
+
 
 ul.file-row {
 	list-style-type: none;
@@ -76,7 +92,18 @@ span {
 }
 
 ul.file-row .name {
-	width: 440px;
+	width: 390px;
+}
+
+ul.file-row .btn-section-1 {
+	width: 100px;
+}
+
+ul.file-row .btn-section-1 img {
+	position: relative;
+    top: 4px;
+    width: 20px;
+    padding: 0px 5px 0px 5px;
 }
 
 ul.file-row .date {
@@ -87,27 +114,14 @@ ul.file-row .size {
 	width: 150px;
 }
 
-ul.file-row .btn-section {
+ul.file-row .btn-section-2 {
 	width: 50px;
 }
 
-ul.file-row .btn-section img {
+ul.file-row .btn-section-2 img {
 	position: relative;
     top: 4px;
+    width: 20px;
 }
 
-ul.attributes-row .name {
-	width: 400px;
-	padding-left: 8px;
-}
-
-ul.attributes-row .date {
-	width: 260px;
-	padding-left: 63px;
-}
-
-ul.attributes-row .size {
-	width: 100px;
-	padding-left: 35px;
-}
 

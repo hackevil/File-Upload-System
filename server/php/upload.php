@@ -1,5 +1,4 @@
 <?php
-//unlink('test.html')
 
 $directoy      = "uploads/";
 $target_file   = $directoy . basename($_FILES["fileToUpload"]["name"]);
@@ -24,7 +23,15 @@ if (isset($_GET['delete'])) {
 if ($handle = opendir($directoy)) {
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
-            echo '<ul class="file-row"><li class="type"><img src="assets/img/file-icon.png" width="20px"></li><li class="name"><a href="' . $directoy . $entry . '" download>' . $entry . '</a><br /></li><li class="date">' . date("d/m/y H:i:s", filemtime($directoy . $entry)) . '</li><li class="size">' . filesize($directoy . $entry) .'KB </li><li class="btn-section"><a href="?delete=' . $directoy . $entry . '"><img src="assets/img/bin-icon.png" width="20px"></a></li></ul>' . "\n";   
+            echo '
+            <ul class="file-row">
+              <li class="type"><img src="assets/img/file-icon.png" width="20px"></li>
+              <li class="name"><a href="' . $directoy . $entry . '" download>' . $entry . '</a><br /></li>
+              <li class="btn-section-1"><a href="' . $directoy . $entry . '"><img src="assets/img/view-icon.png"></a><a href="' . $directoy . $entry . '" download><img src="assets/img/download-icon.png"></a></li>
+              <li class="date">' . date("d/m/y H:i:s", filemtime($directoy . $entry)) . '</li>
+              <li class="size">' . filesize($directoy . $entry) .'KB </li>
+              <li class="btn-section-2"><a href="?delete=' . $directoy . $entry . '"><img src="assets/img/bin-icon.png"></a></li>
+            </ul>' . "\n";   
         }
     }
     closedir($handle);
