@@ -3,7 +3,6 @@
 
 ![](https://cloud.githubusercontent.com/assets/24397291/21464330/dda553f6-c971-11e6-86d9-4c5a0cf29f4f.png)
 
-
 ## Features
 ######- Directory Listing
 ######- Drag & Drop Support
