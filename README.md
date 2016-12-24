@@ -17,7 +17,7 @@
 
 
 ## Installation 
-Place the files on your web server and the application will create the necessary directories. You change the uploads directory in 'server/php/upload.php'.
+Place the files on your web server and the application will create the necessary directories. You can change the uploads directory in 'server/php/upload.php'.
 
 
 ## License 
