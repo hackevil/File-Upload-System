@@ -1,7 +1,6 @@
 # File Upload System
 > Turns Your Web Host Into a Graphical User-friendly File Upload & Storage Location.
 
-![](https://cloud.githubusercontent.com/assets/24397291/21464330/dda553f6-c971-11e6-86d9-4c5a0cf29f4f.png)
 
 ## Features
 ######- Directory Listing
@@ -15,7 +14,7 @@
 
 
 ## Future updates
-######- Fully Ajax 
+######- Ajax 
 ######- Ionic Mobile Application Development
 
 
