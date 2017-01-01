@@ -1,6 +1,6 @@
 <?php
 
-$directoy      = "uploads/";
+$directoy = "uploads/";
 $target_file   = $directoy . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk      = true;
 $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
@@ -10,13 +10,13 @@ if (!file_exists($directoy)) {
 }
 
 if (count(glob($directoy . "*")) === 0 ) { 
-    echo "<span>This folder is empty!</span>"; 
+    echo '<span id="empty">This folder is empty!</span>'; 
 }
 
 if (isset($_GET['delete'])) {
         unlink($_GET['delete']);
     if (count(glob($directoy . "*")) === 0 ) { 
-      echo "<span>This folder is empty!</span>"; 
+      echo '<span id="empty">This folder is empty!</span>'; 
   }
 }
 
@@ -25,7 +25,7 @@ if ($handle = opendir($directoy)) {
         if ($entry != "." && $entry != "..") {
             echo '
             <ul class="file-row">
-              <li class="type"><img src="assets/img/file-icon.png" width="20px"></li>
+              <li class="type"><img src="assets/img/file-icon.png"></li>
               <li class="name"><a href="' . $directoy . $entry . '" download>' . $entry . '</a><br /></li>
               <li class="btn-section-1"><a href="' . $directoy . $entry . '"><img src="assets/img/view-icon.png"></a><a href="' . $directoy . $entry . '" download><img src="assets/img/download-icon.png"></a></li>
               <li class="date">' . date("d/m/y H:i:s", filemtime($directoy . $entry)) . '</li>
@@ -55,6 +55,12 @@ if (isset($_POST["submit"])) {
       }
    }
 }
+
+echo '
+  <ul class="custom-menu">
+    <li data-action="download-option" id="file-download-cm"><img id="cm-icon" src="assets/img/file-icon.png">Download File</li>
+    <li data-action="upload-option" id="file-upload-cm"><img id="cm-icon" src="assets/img/file-icon.png">Upload Files</li>
+  </ul>';
  
 
 ?>

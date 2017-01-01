@@ -1,4 +1,28 @@
-/*** Uoload Buttons ***/
+/*** main styling ***/
+
+body {
+
+}
+
+/*** top bar ***/ 
+
+#top-bar {
+	margin: 0 auto;
+	width: 1080px;
+	margin: 0 auto;
+}
+
+#upload-icon {
+	position: relative;
+    top: 20px;
+    width: 27px;
+}
+
+#upload-icon:hover {
+	cursor: pointer;
+}
+
+/*** Upload Buttons ***/
 
 #upload-form {
 	margin-top: 100px;
@@ -8,8 +32,13 @@
 /*** File Directory / Listing ***/
 
 #directory-wrapper {
-	width: 1200px;
-	padding: 20px
+	margin: 0 auto;
+	text-align: center;
+	width: 1080px;
+	padding: 20px;
+	margin: 0 auto;
+	margin-top: 30px;
+	
 }
 
 ul.attributes-row {
@@ -21,6 +50,7 @@ ul.attributes-row {
 
 .attributes-row li {
 	display: inline-block;
+	text-align: left;
 	height: 30px;
 	line-height: 30px;
 
@@ -38,7 +68,7 @@ ul.attributes-row .date {
 }
 
 ul.attributes-row .size {
-	width: 100px;
+	width: 201px;
 	padding-left: 35px;
 }
 
@@ -69,6 +99,7 @@ ul.file-row a:hover {
 
 .file-row li {
 	display: inline-block;
+	text-align: left;
 	height: 40px;
 	line-height: 44px;
     overflow:hidden;
@@ -83,12 +114,14 @@ ul.file-row .type img {
 	position: relative;
     top: 7px;
     padding-left: 10px;
+    width: 20px;
 }
 
-span {
+#empty {
 	position: relative;
     top: 10px;
     margin-left: 10px;
+    left: -445px;
 }
 
 ul.file-row .name {
@@ -104,6 +137,7 @@ ul.file-row .btn-section-1 img {
     top: 4px;
     width: 20px;
     padding: 0px 5px 0px 5px;
+    /* visibility:hidden */
 }
 
 ul.file-row .date {
@@ -124,4 +158,37 @@ ul.file-row .btn-section-2 img {
     width: 20px;
 }
 
+/*** Custom Menu ***/
+.custom-menu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    font-family: sans-serif;
+    background: #FFF;
+    color: #333;
+    border-radius: 1px;
+    padding: 0;
+    text-align: left;
+
+}
+
+.custom-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.custom-menu li:hover {
+    background-color: #DEF;
+}
+
+#cm-icon {
+	padding: 0px 5px 0px 0px;
+	position: relative;
+    top: 3px;
+    width: 13px;
+}
 

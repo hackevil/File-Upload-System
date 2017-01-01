@@ -11,10 +11,23 @@
 
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+
 </head>
 <body>
 
 	<div id="wrapper">
+
+		<div id="header">
+		</div>
+
+		<div id="top-bar">
+			<img id="upload-icon" src="assets/img/add-icon.png">
+		</div>
 
 		<div id="directory-wrapper">
 
@@ -27,12 +40,15 @@
 			<?php include 'server/php/upload.php'; ?>
 		</div>
 
-		<form id="upload-form" method="post" enctype="multipart/form-data">
-		    <input type="file" name="fileToUpload[]" id="fileToUpload[]" multiple />
-		    <input type="submit" value="Upload" name="submit" />
+		<form id="upload-form" method="post" enctype="multipart/form-data" style="visibility: hidden;">
+		    <input type="file" name="fileToUpload[]" id="fileToUpload[]" onchange="submitting(this)" multiple />
+		    <input type="submit" value="Upload" id="submit-file" name="submit" />
 		</form>
 
 	</div>
+
+
+	<script src="js/script.js"></script>
 
 </body>
 </html>
